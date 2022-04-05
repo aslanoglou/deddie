@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Ping LCG';
-  src: url('/dist/fonts/PingLCG-Bold.woff2') format('woff2');
+  src: url(../fonts/PingLCG-Bold.woff2) format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Ping LCG';
-  src: url('/dist/fonts/PingLCG-Regular.woff2') format('woff2');
+  src: url(../fonts/PingLCG-Regular.woff2) format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,11 +16,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('/dist/fonts/deddie-icons.eot?jv4yrd');
-  src:  url('/dist/fonts/deddie-icons.eot?jv4yrd#iefix') format('embedded-opentype'),
-  url('/dist/fonts/deddie-icons.ttf?jv4yrd') format('truetype'),
-  url('/dist/fonts/deddie-icons.woff?jv4yrd') format('woff'),
-  url('/dist/fonts/deddie-icons.svg?jv4yrd#icomoon') format('svg');
+  src:  url(../fonts/deddie-icons.eot?jv4yrd);
+  src:  url(../fonts/deddie-icons.eot?jv4yrd#iefix) format('embedded-opentype'),
+  url(../fonts/deddie-icons.ttf?jv4yrd) format('truetype'),
+  url(../fonts/deddie-icons.woff?jv4yrd) format('woff'),
+  url(../fonts/deddie-icons.svg?jv4yrd#icomoon) format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

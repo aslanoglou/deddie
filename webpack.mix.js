@@ -9,6 +9,7 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+mix.setResourceRoot('../');
 
 mix.js('src/js/online-vlavi.js', 'dist/js/online-vlavi.js');
 mix.js('src/js/programatismenes-diakopes.js', 'dist/js/programatismenes-diakopes.js');
