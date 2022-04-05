@@ -1,0 +1,2088 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="dist/css/main.css" rel="stylesheet">
+    <title>Προγραμματισμένες διακοπές ηλεκτροδότησης</title>
+    <style>
+        body:after {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<!--header without menu-->
+<header>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+                <a href="" class="header__logo"><img src="dist/images/logo.svg" alt="ΔΕΔΔΗΕ" width="99" height="49"></a>
+            </div>
+            <div class="col-auto">
+                <h1 class="text-center">Μετρητικά δεδομένα πελατών μέσης τάσης</h1>
+            </div>
+            <div class="col-auto">
+                <div class="d-flex">
+                    <div class="support-box ms-3">
+                        <a href="" class="support-box__icon">
+                            <span class="icon-support"></span>
+                        </a>
+                        <div class="support-box__tooltip">
+                            <div class="d-flex">
+                                <div class="me-2">
+                                    <span class="icon-telephone fs-40 blue-color"></span>
+                                </div>
+                                <div class="fw-bold">
+                                    <a href="tel:800 400 4000">800 400 4000</a>
+                                    <a href="tel:11 500">11 500</a>
+                                    <a href="tel:211 11900 500">211 11900 500</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="" class="btn btn-outline-primary">
+                                Φόρμα επικοινωνίας
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <!--ΑΝ ΔΕΝ ΘΕΛΟΥΜΕ ΤΟ BUTTON ΕΙΣΟΔΟΣ ΠΡΟΣΘΕΤΟΥΜΕ ΤΗΝ CLASS d-none -->
+                        <a href="" class="btn btn-transparent w-auto">
+                            ΕΙΣΟΔΟΣ
+                        </a>
+                    </div>
+                    <!--ΑΝ ΔΕΝ ΘΕΛΟΥΜΕ ΤΟ BUTTON ΛΟΓΑΡΙΑΣΜΟΥ ΠΡΟΣΘΕΤΟΥΜΕ ΣΤΟ account-box ΤΗΝ CLASS d-none -->
+                    <div class="account-box ms-3">
+                        <a href="" class="account-box__icon">
+                            <span class="icon-profile"></span>
+                        </a>
+                        <div class="account-box__tooltip">
+                            <div class="account-box__tooltip__name">Γεώργιος Παπαδάκης</div>
+                            <a href="" class="fw-bold">Aλλαγή κωδικού πρόσβασης</a>
+                            <a href="" class="fw-bold">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.625 11.75L3.28125 11.75C2 11.75 1.25 10.8686 1.25 9.78125L1.25 3.21875C1.25 2.13144 2 1.25 3.28125 1.25L3.625 1.25M8 3.875L10.625 6.5M10.625 6.5L8 9.125M10.625 6.5L3.75 6.5"
+                                          stroke="#1242B0" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Αποσύνδεση</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<br><br><br>
+
+<!--header with menu-->
+<header class="navbar-expand-lg">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+                <button class="navbar-toggler collapsed me-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="" class="header__logo"><img src="dist/images/logo.svg" alt="ΔΕΔΔΗΕ" width="99" height="49"></a>
+            </div>
+            <div class="col-auto">
+                <h1 class="text-center">Μετρητικά δεδομένα πελατών μέσης τάσης</h1>
+            </div>
+            <div class="col-auto">
+                <div class="d-flex">
+                    <div class="support-box ms-3">
+                        <a href="" class="support-box__icon">
+                            <span class="icon-support"></span>
+                        </a>
+                        <div class="support-box__tooltip">
+                            <div class="d-flex">
+                                <div class="me-2">
+                                    <span class="icon-telephone fs-40 blue-color"></span>
+                                </div>
+                                <div class="fw-bold">
+                                    <a href="tel:800 400 4000">800 400 4000</a>
+                                    <a href="tel:11 500">11 500</a>
+                                    <a href="tel:211 11900 500">211 11900 500</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="" class="btn btn-outline-primary">
+                                Φόρμα επικοινωνίας
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <!--ΑΝ ΔΕΝ ΘΕΛΟΥΜΕ ΤΟ BUTTON ΕΙΣΟΔΟΣ ΠΡΟΣΘΕΤΟΥΜΕ ΤΗΝ CLASS d-none -->
+                        <a href="" class="btn btn-transparent w-auto">
+                            ΕΙΣΟΔΟΣ
+                        </a>
+                    </div>
+                    <!--ΑΝ ΔΕΝ ΘΕΛΟΥΜΕ ΤΟ BUTTON ΛΟΓΑΡΙΑΣΜΟΥ ΠΡΟΣΘΕΤΟΥΜΕ ΣΤΟ account-box ΤΗΝ CLASS d-none -->
+                    <div class="account-box ms-3">
+                        <a href="" class="account-box__icon">
+                            <span class="icon-profile"></span>
+                        </a>
+                        <div class="account-box__tooltip">
+                            <div class="account-box__tooltip__name">Γεώργιος Παπαδάκης</div>
+                            <a href="" class="fw-bold">Aλλαγή κωδικού πρόσβασης</a>
+                            <a href="" class="fw-bold">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.625 11.75L3.28125 11.75C2 11.75 1.25 10.8686 1.25 9.78125L1.25 3.21875C1.25 2.13144 2 1.25 3.28125 1.25L3.625 1.25M8 3.875L10.625 6.5M10.625 6.5L8 9.125M10.625 6.5L3.75 6.5"
+                                          stroke="#1242B0" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Αποσύνδεση</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar bg-blue">
+
+        <div class="container navbar-collapse collapse" id="navbarTogglerDemo03">
+            <a class="text-decoration-none white-color me-2" aria-current="page" href="#">Αρχική</a>
+            <div class="navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Υπηρεσίες
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Αλλαγή κωδικού πρόσβασης</a></li>
+                            <li><a class="dropdown-item" href="#">Υπηρεσία αλληλεγγύης</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <br><br><br>
+
+    <!--alert red (alert-warning class)-->
+    <div class="alert alert-warning d-flex align-items-center" role="alert">
+        <span class="icon-info orange-color me-2"></span>
+        <div>
+            <strong>Προσοχή</strong>
+        </div>
+        <a class="alert__arrow" data-bs-toggle="collapse" href="#warningMessage" role="button" aria-expanded="true"
+           aria-controls="warningMessage"></a>
+        <div class="alert__text pt-3 collapse show" id="warningMessage">
+            Ενώ καταβάλλεται κάθε προσπάθεια για τη συντομότερη επανηλεκτροδότηση, εντούτοις, επιβάλλεται μεγάλη
+            προσοχή, θεωρώντας ότι σε όλη την προγραμματισμένη διάρκεια διακοπής, οι αγωγοί είναι υπό τάση!
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!--alert info (alert-info class)-->
+    <div class="alert alert-info d-flex align-items-center" role="alert">
+        <span class="icon-info"></span>
+        <div>
+            <strong>Ενημέρωση</strong>
+        </div>
+        <a class="alert__arrow" data-bs-toggle="collapse" href="#infoMessage" role="button" aria-expanded="true"
+           aria-controls="infoMessage"></a>
+        <div class="alert__text pt-3 collapse show" id="infoMessage">
+            Ο ΔΕΔΔΗΕ δε φέρει ευθύνη σε περίπτωση ψευδούς δηλώσεως ιδιότητος χρήστη. Ο ΔΕΔΔΗΕ θα σας ενημερώνει για
+            θέματα της παροχής σύμφωνα με τις αρμοδιότητες λειτουργίας του. Για περισσότερες πληροφορίες για την
+            προστασία προσωπικών δεδομένων δείτε τους <a href="">Όρους Χρήσης & την Ενημέρωση σχετικά με την επεξεργασία
+            των
+            Προσωπικών Δεδομένων.</a>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!--alert info with max-962 (alert-info / alert--max-962 class)-->
+    <div class="alert alert-info alert--max-962 d-flex align-items-center" role="alert">
+        <span class="icon-info"></span>
+        <div>
+            <strong>Ενημέρωση</strong>
+        </div>
+        <a class="alert__arrow" data-bs-toggle="collapse" href="#infoMessage2" role="button" aria-expanded="true"
+           aria-controls="infoMessage"></a>
+        <div class="alert__text pt-3 collapse show" id="infoMessage2">
+            Ο ΔΕΔΔΗΕ δε φέρει ευθύνη σε περίπτωση ψευδούς δηλώσεως ιδιότητος χρήστη. Ο ΔΕΔΔΗΕ θα σας ενημερώνει για
+            θέματα της παροχής σύμφωνα με τις αρμοδιότητες λειτουργίας του. Για περισσότερες πληροφορίες για την
+            προστασία προσωπικών δεδομένων δείτε τους <a href="">Όρους Χρήσης & την Ενημέρωση σχετικά με την επεξεργασία
+            των
+            Προσωπικών Δεδομένων.</a>
+        </div>
+    </div>
+
+    <!--BUTTONS-->
+    <button class="btn btn-primary" type="submit" role="button">Aναζήτηση</button>
+    <br><br/>
+    <button class="btn btn-primary" type="submit" role="button" disabled>Aναζήτηση</button>
+    <br><br/>
+    <button class="btn btn-outline-primary" type="submit" role="button">Aναζήτηση</button>
+    <br><br/>
+    <button class="btn btn-outline-primary" type="submit" role="button" disabled>Aναζήτηση</button>
+    <br><br/>
+    <button class="btn btn-outline-primary d-flex justify-content-center align-items-center" role="button">
+        <span class="icon-bin me-1"></span>
+        Ανάκληση δήλωσης βλάβης
+    </button>
+    <br><br/>
+    <button class="btn btn-outline-primary d-flex justify-content-center align-items-center" role="button" disabled>
+        <span class="icon-bin me-1"></span>
+        Ανάκληση δήλωσης βλάβης
+    </button>
+    <br><br/>
+    <!--HEADER BUTTON-->
+    <a href="" class="btn btn-transparent w-auto" role="button">
+        ΕΙΣΟΔΟΣ
+    </a><br><br>
+
+    <p>
+        <!--FONTS ICONS-->
+        <!--COLORS: white-color, grey-color, blue-color, red-color, orange-color, peach-color, black-color or they take the currentColor-->
+        <!--SIZES: fs-10, fs-14 ,fs-16 ,fs-18 ,fs-30 ,fs-40 or take the inherit -->
+        <span class="icon-bullet red-color"></span>
+        <span class="icon-lock red-color fs-30"></span>
+        <span class="icon-exclamation-mark-fill red-color fs-30"></span>
+        <span class="icon-exclamation-mark red-color fs-30"></span>
+        <span class="icon-down red-color fs-30"></span>
+        <span class="icon-up-down red-color fs-30"></span>
+        <span class="icon-plus red-color fs-30"></span>
+        <span class="icon-thunder red-color fs-30"></span>
+        <span class="icon-pin red-color fs-30"></span>
+        <span class="icon-logout red-color fs-30"></span>
+        <span class="icon-unlock red-color fs-30"></span>
+        <span class="icon-telephone red-color fs-30"></span>
+        <span class="icon-error red-color fs-30"></span>
+        <span class="icon-filter red-color fs-30"></span>
+        <span class="icon-refresh red-color fs-30"></span>
+        <span class="icon-bin red-color fs-30"></span>
+        <span class="icon-chevron-right red-color fs-30"></span>
+        <span class="icon-chevron-left red-color fs-30"></span>
+        <span class="icon-calendar red-color fs-30"></span>
+        <span class="icon-check red-color fs-30"></span>
+        <span class="icon-download red-color fs-30"></span>
+        <span class="icon-green-check red-color fs-30"></span>
+        <span class="icon-info red-color fs-30"></span>
+        <span class="icon-profile red-color fs-30"></span>
+        <span class="icon-search red-color fs-30"></span>
+        <span class="icon-support red-color fs-30"></span>
+    </p>
+
+
+    <p><a href="" class="text-decoration-none"><span class="icon-logout"></span> Αποσύνδεση</a></p>
+    <p><a href="" class="text-decoration-none">Kaθαρισμός πεδίων <span class="icon-refresh"></span></a></p>
+    <p><a href="" class="text-decoration-none">Κατέβασμα <span class="icon-download"></span></a></p>
+    <p><a href="" class="text-decoration-none">Διαγραφή <span class="icon-bin"></span></a></p>
+    <p><a href="" class="text-decoration-none">Γράφημα αέργων <span class="icon-chevron-right"></span></a></p>
+    <p><a href="" class="text-decoration-none">Φίλτρα <span class="icon-filter"></span></a></p>
+    <p><a href="" class="text-decoration-none">Γράφημα αέργων</a></p>
+    <p><a href="" class="text-decoration-none">Προσθήκη αρχείου <span class="icon-plus"></span></a></p>
+    <p><a href="tilemetrisi-screen-start.html" class="prev-link "><span
+            class="icon-chevron-left blue-color fw-bold"></span>Προηγούμενο</a>
+    </p>
+
+    <div class="info-text mb-4">
+        <a href="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="9-ψήφιος αριθμός παροχής όπως
+αναγράφεται στον λογαριασμό ενέργειας:<br> <span>1 23456789-01</span> 5" class="lh-1 text-decoration-none">
+            <span class="icon-info orange-color fs-16"></span>
+        </a>
+        <span>Θα ζητηθεί αριθμός παροχής</span>
+    </div>
+
+    <br><br>
+
+    <div class="info-text mb-4">
+        <span class="icon-info orange-color fs-16"></span>
+        <span>Παρακαλούμε ελέγξτε τα παραπάνω στοιχεία που αναγράφονται στην αίτηση. Στην περίπτωση που η αναγραφόμενη επωνυμία χρήστη δεν αποτελεί και την επωνυμία του Φορέα, όπως αυτή αναγράφεται στο καταστατικό, θα πρέπει να μεριμνήσετε προηγουμένως για την αντίστοιχη αλλαγή του ονόματος (αλλαγή χρήστη παροχής ηλεκτρικού ρεύματος), απευθυνόμενοι στον Προμηθευτή που εκπροσωπεί την παροχή σας. Στην περίπτωση του Παραρτήματος ή αλλων εγκαταστάσεων που ανήκουν στον Φορέα, το όνομα χρήστη παροχής θα πρέπει να είναι το ίδιο με την επωνυμία του Φορέα στον οποίον υπάγεται.</span>
+    </div>
+
+    <!--FORM ELEMENTS-->
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Επηρεάζει πολλαπλά ακίνητα</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" required>
+        <label class="form-check-label" for="flexRadioDefault3">
+            Δεν γνωρίζω
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault4" required>
+        <label class="form-check-label" for="flexRadioDefault4">
+            Δεν γνωρίζω
+        </label>
+    </div>
+
+    <!--FORM ELEMENTS-->
+    <form class="g-3 needs-validation" novalidate>
+        <div class="max-564">
+            <div class="mb-4">
+                <label for="number" class="w-100 form-label fw-bold d-flex align-items-center">Αριθμός Αιτήματος</label>
+                <div class="d-flex align-items-center flex-nowrap">
+                    <input type="number" class="form-control form-control--w-60" id="number-1" placeholder="" required>
+                    <div class="flex-25"> -</div>
+                    <input type="number" class="form-control flex-fill" id="number-2" placeholder="" required>
+                    <div class="flex-25"> -</div>
+                    <input type="number" class="form-control form-control--w-60" id="number-3" placeholder="" required>
+                    <div class="flex-25"> -</div>
+                    <input type="number" class="form-control form-control--w-60" id="number-4" placeholder="" required>
+                    <div class="flex-25"> -</div>
+                    <input type="number" class="form-control flex-fill" id="number-5" placeholder="" required>
+                </div>
+                <div class="invalid-feedback w-100">
+                    Το πεδίο είναι υποχρεωτικό
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-5">
+                    <label for="number" class="form-label fw-bold d-flex align-items-center">Αριθμός παροχής
+                        <a href="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="9-ψήφιος αριθμός παροχής όπως
+αναγράφεται στον λογαριασμό ενέργειας:<br> <span>1 23456789-01</span> 5" class="lh-1">
+                            <span class="icon-info orange-color ms-1 fs-16"></span>
+                        </a>
+                    </label>
+                    <input type="number" class="form-control" id="number" placeholder="11 ψηφία χωρίς κενά/ παύλες"
+                           required>
+                    <div class="invalid-feedback">
+                        Το πεδίο είναι υποχρεωτικό
+                    </div>
+                </div>
+
+            </div>
+
+            <!--DATE-->
+            <label class="form-label fw-bold" for="fek-date">Επιλέξτε τον Εκκλησιαστικό Φορέα στον οποίο υπάγεται ο
+                υπόψη
+                χώρος :*</label>
+            <input type="date" class="form-control" id="fek-date" placeholder=""
+                   required>
+            <div class="invalid-feedback">
+                Το πεδίο είναι υποχρεωτικό
+            </div>
+
+
+            <br><br><br>
+
+
+            <div class="d-flex align-items-center">
+                <a href="tilemetrisi-screen-start.html" class="prev-link mt-4"><span
+                        class="icon-chevron-left blue-color fw-bold"></span>Προηγούμενο</a>
+                <div class="mx-md-4">
+                    <label class="form-label fw-bold" for="fek-date2">Μήνας</label>
+                    <input type="date" class="form-control" id="fek-date2" placeholder=""
+                           required>
+                    <div class="invalid-feedback">
+                        Το πεδίο είναι υποχρεωτικό
+                    </div>
+                </div>
+                <a href="tilemetrisi-screen-start.html" class="next-link mt-4">Επόμενο<span
+                        class="icon-chevron-right blue-color fw-bold"></span></a>
+            </div>
+
+
+            <br><br><br>
+
+
+            <!--SELECT-->
+            <label class="form-label fw-bold">Επιλέξτε τον Εκκλησιαστικό Φορέα στον οποίο υπάγεται ο υπόψη
+                χώρος :*</label>
+            <select class="form-select form-select--transparent form-select--no-wrap"
+                    aria-label="Default select example" required>
+                <option value="" disabled selected hidden>Επιλέξτε</option>
+                <option value="1">Πιστοποιημένες</option>
+                <option value="2">Πιστοποιημένες</option>
+                <option value="3">Πιστοποιημένες</option>
+            </select>
+            <div class="invalid-feedback">
+                Το πεδίο είναι υποχρεωτικό
+            </div>
+
+            <br><br><br>
+
+            <select class="form-select form-select--transparent w-auto" aria-label="Default select example">
+                <option selected>10</option>
+                <option value="1">10</option>
+                <option value="2">20</option>
+                <option value="3">30</option>
+            </select>
+
+            <br><br><br>
+
+            <div class=" text-center">
+                <button class="btn btn-primary" type="submit" role="button">Aναζήτηση</button>
+            </div>
+        </div>
+    </form>
+
+    <br><br><br>
+    <!--STEPS-->
+    <div class="steps">
+        <div class="progress"></div>
+        <div class="step-item">
+            <button class="step-button text-center done" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <span class="icon-check"></span>
+            </button>
+            <div class="step-title">
+                Τοποθεσία
+            </div>
+        </div>
+        <div class="step-item">
+            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <span class="icon-check"></span>
+            </button>
+            <div class="step-title">
+                Στοιχεία παροχής
+            </div>
+        </div>
+        <div class="step-item">
+            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="icon-check"></span>
+            </button>
+            <div class="step-title">
+                Στοιχεία βλάβης
+            </div>
+        </div>
+        <div class="step-item">
+            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <span class="icon-check"></span>
+            </button>
+            <div class="step-title">
+                Προσωπικά στοιχεία
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!--MODALS-->
+    <a href="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successModal">success modal open</a>
+    <a href="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactInfoModal">contact info modal
+        open</a>
+    <div class="modal" id="successModal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header text-center">
+                    <span class="icon-green-check green-color fs-50 mx-auto"></span>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body text-center">
+                    <h4>Επιτυχής καταχώριση</h4>
+                    <p>To αίτημα σας καταχωρήθηκε με αριθμό 1926892 και προωθήθηκε στις τεχνικές υπηρεσίες του ΔΕΔΔΗΕ
+                        προς
+                        επίλυση</p>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <button class="btn btn-outline-primary btn mx-md-2 my-3" type="button" role="button">Δήλωση νέας
+                        βλάβης
+                    </button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Τέλος</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="contactInfoModal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content px-5">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="fs-5">Στοιχεία επικοινωνίας</h3>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body fs-14">
+                    <h4 class="fs-6 fw-bold">Διεύθυνση διαχειρισης νήσων</h4>
+                    <p>Λεωφόρος Συγγρού 98-100, 11741 Αθήνα</p>
+                    <h4 class="fs-6 fw-bold mt-4">Υποστήριξη</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores dignissimos distinctio
+                        dolor
+                        doloribus enim esse exercitationem illum incidunt ipsum nemo nobis possimus qui quibusdam
+                        ratione
+                        saepe, vel veniam veritatis?</p>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Εντάξει</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+
+    <!--MEASURES TABLE-->
+    <div class="measures-table accordion mb-3" id="measuresAccordion">
+        <div class="measures-table__th">
+            <div class="measures-table__th__td">Περιφέρεια</div>
+            <div class="measures-table__th__td">01</div>
+            <div class="measures-table__th__td">02</div>
+            <div class="measures-table__th__td">03</div>
+            <div class="measures-table__th__td">04</div>
+            <div class="measures-table__th__td">05</div>
+            <div class="measures-table__th__td">06</div>
+            <div class="measures-table__th__td">07</div>
+            <div class="measures-table__th__td">08</div>
+            <div class="measures-table__th__td">09</div>
+            <div class="measures-table__th__td">10</div>
+            <div class="measures-table__th__td">11</div>
+            <div class="measures-table__th__td">12</div>
+            <div class="measures-table__th__td">13</div>
+            <div class="measures-table__th__td">14</div>
+            <div class="measures-table__th__td">15</div>
+            <div class="measures-table__th__td">16</div>
+            <div class="measures-table__th__td">17</div>
+            <div class="measures-table__th__td">18</div>
+            <div class="measures-table__th__td">19</div>
+            <div class="measures-table__th__td">20</div>
+            <div class="measures-table__th__td">21</div>
+            <div class="measures-table__th__td">22</div>
+            <div class="measures-table__th__td">23</div>
+            <div class="measures-table__th__td">24</div>
+            <div class="measures-table__th__td">25</div>
+            <div class="measures-table__th__td">26</div>
+            <div class="measures-table__th__td">27</div>
+            <div class="measures-table__th__td">28</div>
+            <div class="measures-table__th__td">29</div>
+            <div class="measures-table__th__td">30</div>
+            <div class="measures-table__th__td">31</div>
+        </div>
+        <!-- Periferia ACCORDION ITEM-->
+        <div>
+            <div class="measures-table__tr accordion-item">
+                <div class="measures-table__tr__td">
+                    <!--  anoigei tin periferia-->
+                    <a href="" class="accordion-button collapsed" type="button"
+                       data-bs-toggle="collapse" data-bs-target="#accordionPeriferia1"
+                       aria-expanded="true" aria-controls="accordionPeriferia1"><span>Αν. Μακεδονίας & Θράκης</span></a>
+                </div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+            </div>
+            <div id="accordionPeriferia1" class="accordion-collapse collapse" data-bs-parent="#measuresAccordion">
+                <div class="accordion-body">
+                    <!-- Periferiaki Enotita MAIN Title-->
+                    <div class="measures-table__tr measures-table__tr--inner-title">
+                        <div class="measures-table__tr__td">Περιφερειακή ενότητα</div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                    </div>
+                    <!-- /Periferiaki Enotita MAIN Title-->
+                    <!-- Periferiaki Enotita ITEM-->
+                    <div>
+                        <!-- Periferiaki Enotita title-->
+                        <div class="measures-table__tr accordion-item">
+                            <div class="measures-table__tr__td">
+                                <!--  anoigei tin enotita-->
+                                <a href="" class="accordion-button collapsed" type="button"
+                                   data-bs-toggle="collapse" data-bs-target="#accordionUnit1"
+                                   aria-expanded="true" aria-controls="accordionUnit1"><span>Καβάλας</span></a>
+                            </div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+
+                        </div>
+                        <!-- /Periferiaki Enotita title-->
+                        <!-- Periferiaki Enotita ACCORDION-->
+                        <div id="accordionUnit1" class="accordion-collapse collapse" data-bs-parent="#accordionPeriferia1">
+                            <div class="accordion-body">
+                                <!--Dimos MAIN TITLE-->
+                                <div class="measures-table__tr measures-table__tr--inner-title">
+                                    <div class="measures-table__tr__td">Δήμος</div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                </div>
+                                <!--/Dimos MAIN TITLE-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Καβάλας
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Νέστου
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Παγγαίου
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                            </div>
+                        </div>
+                        <!-- /Periferiaki Enotita ACCORDION-->
+                    </div>
+                    <!-- /Periferiaki Enotita ITEM-->
+                    <!-- Periferiaki Enotita ITEM-->
+                    <div>
+                        <!-- Periferiaki Enotita title-->
+                        <div class="measures-table__tr accordion-item">
+                            <div class="measures-table__tr__td">
+                                <!--  anoigei tin enotita-->
+                                <a href="" class="accordion-button collapsed" type="button"
+                                   data-bs-toggle="collapse" data-bs-target="#accordionUnit2"
+                                   aria-expanded="true" aria-controls="accordionUnit2"><span>Καβάλας</span></a>
+                            </div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+
+                        </div>
+                        <!-- /Periferiaki Enotita title-->
+                        <!-- Periferiaki Enotita ACCORDION-->
+                        <div id="accordionUnit2" class="accordion-collapse collapse" data-bs-parent="#accordionPeriferia1">
+                            <div class="accordion-body">
+                                <!--Dimos MAIN TITLE-->
+                                <div class="measures-table__tr measures-table__tr--inner-title">
+                                    <div class="measures-table__tr__td">Δήμος</div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                </div>
+                                <!--/Dimos MAIN TITLE-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Καβάλας
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Νέστου
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Παγγαίου
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                            </div>
+                        </div>
+                        <!-- /Periferiaki Enotita ACCORDION-->
+                    </div>
+                    <!-- /Periferiaki Enotita ITEM-->
+                </div>
+            </div>
+
+        </div>
+        <!-- /Periferia ACCORDION ITEM-->
+        <!-- Periferia ACCORDION ITEM-->
+        <div>
+            <div class="measures-table__tr accordion-item">
+                <div class="measures-table__tr__td">
+                    <!--  anoigei tin periferia-->
+                    <a href="" class="accordion-button collapsed" type="button"
+                       data-bs-toggle="collapse" data-bs-target="#accordionPeriferia2"
+                       aria-expanded="true" aria-controls="accordionPeriferia2"><span>Αν. Μακεδονίας & Θράκης</span></a>
+                </div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+            </div>
+            <div id="accordionPeriferia2" class="accordion-collapse collapse" data-bs-parent="#measuresAccordion">
+                <div class="accordion-body">
+                    <!-- Periferiaki Enotita MAIN Title-->
+                    <div class="measures-table__tr measures-table__tr--inner-title">
+                        <div class="measures-table__tr__td">Περιφερειακή ενότητα</div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                        <div class="measures-table__tr__td"></div>
+                    </div>
+                    <!-- /Periferiaki Enotita MAIN Title-->
+                    <!-- Periferiaki Enotita ITEM-->
+                    <div>
+                        <!-- Periferiaki Enotita title-->
+                        <div class="measures-table__tr accordion-item">
+                            <div class="measures-table__tr__td">
+                                <!--  anoigei tin enotita-->
+                                <a href="" class="accordion-button collapsed" type="button"
+                                   data-bs-toggle="collapse" data-bs-target="#accordionUnit3"
+                                   aria-expanded="true" aria-controls="accordionUnit3"><span>Καβάλας</span></a>
+                            </div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+
+                        </div>
+                        <!-- /Periferiaki Enotita title-->
+                        <!-- Periferiaki Enotita ACCORDION-->
+                        <div id="accordionUnit3" class="accordion-collapse collapse" data-bs-parent="#accordionPeriferia2">
+                            <div class="accordion-body">
+                                <!--Dimos MAIN TITLE-->
+                                <div class="measures-table__tr measures-table__tr--inner-title">
+                                    <div class="measures-table__tr__td">Δήμος</div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                </div>
+                                <!--/Dimos MAIN TITLE-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Καβάλας
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Νέστου
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Παγγαίου
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                            </div>
+                        </div>
+                        <!-- /Periferiaki Enotita ACCORDION-->
+                    </div>
+                    <!-- /Periferiaki Enotita ITEM-->
+                    <!-- Periferiaki Enotita ITEM-->
+                    <div>
+                        <!-- Periferiaki Enotita title-->
+                        <div class="measures-table__tr accordion-item">
+                            <div class="measures-table__tr__td">
+                                <!--  anoigei tin enotita-->
+                                <a href="" class="accordion-button collapsed" type="button"
+                                   data-bs-toggle="collapse" data-bs-target="#accordionUnit4"
+                                   aria-expanded="true" aria-controls="accordionUnit4"><span>Καβάλας</span></a>
+                            </div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+                            <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span></div>
+
+                        </div>
+                        <!-- /Periferiaki Enotita title-->
+                        <!-- Periferiaki Enotita ACCORDION-->
+                        <div id="accordionUnit4" class="accordion-collapse collapse" data-bs-parent="#accordionPeriferia2">
+                            <div class="accordion-body">
+                                <!--Dimos MAIN TITLE-->
+                                <div class="measures-table__tr measures-table__tr--inner-title">
+                                    <div class="measures-table__tr__td">Δήμος</div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                    <div class="measures-table__tr__td"></div>
+                                </div>
+                                <!--/Dimos MAIN TITLE-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Καβάλας
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Νέστου
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                                <!--Dimos-->
+                                <div class="measures-table__tr measures-table__tr--town">
+                                    <div class="measures-table__tr__td">
+                                        Παγγαίου
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet yellow-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet red-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+                                    <div class="measures-table__tr__td"><span class="icon-bullet green-color"></span>
+                                    </div>
+
+                                </div>
+                                <!--/Dimos-->
+                            </div>
+                        </div>
+                        <!-- /Periferiaki Enotita ACCORDION-->
+                    </div>
+                    <!-- /Periferiaki Enotita ITEM-->
+                </div>
+            </div>
+
+        </div>
+        <!-- /Periferia ACCORDION ITEM-->
+    </div>
+
+    <div class="table-descriptions">
+        <div class="d-flex mb-1"><span class="icon-bullet green-color mt-1 me-2"></span> Δεν ισχύουν τα έκτακτα μέτρα για το συγκεκριμένο Δημοτικό Διαμέρισμα, ή τα Δ.Δ. σε επίπεδο Δήμου ή Περιφερειακής Ενότητας ή Περιφέρειας.</div>
+        <div class="d-flex mb-1"><span class="icon-bullet yellow-color mt-1 me-2"></span> Ισχύουν τα έκτακτα μέτρα σε μερικά από τα Δημοτικά Διαμέρισματα σε επίπεδο Δήμου ή Περιφερειακής Ενότητας ή Περιφέρειας.</div>
+        <div class="d-flex mb-1"><span class="icon-bullet red-color mt-1 me-2"></span> Ισχύουν τα έκτακτα μέτρα σε μερικά από τα Δημοτικά Διαμέρισματα σε επίπεδο Δήμου ή Περιφερειακής Ενότητας ή Περιφέρειας.</div>
+    </div>
+
+
+    <br><br><br>
+
+
+    <div class="table-selection">
+        <div class="table-selection__th">
+            <div class="table-selection__th__td"><a href="">Μήνας
+                τιμολόγησης<span class="icon-up-down"></span></a> </div>
+            <div class="table-selection__th__td"><a href="">Τύπος
+                τιμολόγησης<span class="icon-up-down"></span></a> </div>
+            <div class="table-selection__th__td">Έγινε
+                λήψη</div>
+            <div class="table-selection__th__td">Σχόλια</div>
+            <div class="table-selection__th__td"></div>
+        </div>
+        <div class="table-selection__tr">
+            <div class="table-selection__tr__td">12/2021</div>
+            <div class="table-selection__tr__td">Κανονική</div>
+            <div class="table-selection__tr__td">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault6 "checked required>
+                </div>
+            </div>
+            <div class="table-selection__tr__td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</div>
+            <div class="table-selection__tr__td"><a href=""><span class="icon-chevron-right"></span></a> </div>
+        </div>
+        <div class="table-selection__tr">
+            <div class="table-selection__tr__td">12/2021</div>
+            <div class="table-selection__tr__td">Κανονική</div>
+            <div class="table-selection__tr__td">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault6" checked required>
+                </div>
+            </div>
+            <div class="table-selection__tr__td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</div>
+            <div class="table-selection__tr__td"><a href=""><span class="icon-chevron-right"></span></a> </div>
+        </div>
+        <div class="table-selection__tr">
+            <div class="table-selection__tr__td">12/2021</div>
+            <div class="table-selection__tr__td">Κανονική</div>
+            <div class="table-selection__tr__td">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault6" checked required>
+                </div>
+            </div>
+            <div class="table-selection__tr__td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</div>
+            <div class="table-selection__tr__td"><a href=""><span class="icon-chevron-right"></span></a> </div>
+        </div>
+        <div class="table-selection__tr">
+            <div class="table-selection__tr__td">12/2021</div>
+            <div class="table-selection__tr__td">Κανονική</div>
+            <div class="table-selection__tr__td">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault6" checked required>
+                </div>
+            </div>
+            <div class="table-selection__tr__td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</div>
+            <div class="table-selection__tr__td"><a href=""><span class="icon-chevron-right"></span></a> </div>
+        </div>
+        <div class="table-selection__tr is-active">
+            <div class="table-selection__tr__td">12/2021</div>
+            <div class="table-selection__tr__td">Κανονική</div>
+            <div class="table-selection__tr__td">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault6" checked required>
+                </div>
+            </div>
+            <div class="table-selection__tr__td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</div>
+            <div class="table-selection__tr__td"><a href=""><span class="icon-chevron-right"></span></a> </div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+    <div class="table-smog">
+        <div class="table-smog__th">
+            <div class="table-smog__th__td">Α/Α</div>
+            <div class="table-smog__th__td">Κωδικός αιτήματος</div>
+            <div class="table-smog__th__td">Αρ. παροχής</div>
+            <div class="table-smog__th__td">Ονοματεπώνυμο</div>
+            <div class="table-smog__th__td">Α.Φ.Μ.</div>
+            <div class="table-smog__th__td">Προμηθευτής</div>
+            <div class="table-smog__th__td">Κατηγορία</div>
+            <div class="table-smog__th__td">Ημ. δημιουργίας</div>
+        </div>
+        <div class="table-smog__tr">
+            <div class="table-smog__tr__td">6382</div>
+            <div class="table-smog__tr__td">Α-3729/21-02-22</div>
+            <div class="table-smog__tr__td">1223456667</div>
+            <div class="table-smog__tr__td">Παπαδόπουλος Κωνσταντίνος</div>
+            <div class="table-smog__tr__td">1223456667</div>
+            <div class="table-smog__tr__td">Δ</div>
+            <div class="table-smog__tr__td">Δ</div>
+            <div class="table-smog__tr__td">21-02-22 10:30:20</div>
+        </div>
+        <div class="table-smog__tr">
+            <div class="table-smog__tr__td">6382</div>
+            <div class="table-smog__tr__td">Α-3729/21-02-22</div>
+            <div class="table-smog__tr__td">1223456667</div>
+            <div class="table-smog__tr__td">Παπαδόπουλος Κωνσταντίνος</div>
+            <div class="table-smog__tr__td">1223456667</div>
+            <div class="table-smog__tr__td">Δ</div>
+            <div class="table-smog__tr__td">Δ</div>
+            <div class="table-smog__tr__td">21-02-22 10:30:20</div>
+        </div>
+        <div class="table-smog__tr">
+            <div class="table-smog__tr__td">6382</div>
+            <div class="table-smog__tr__td">Α-3729/21-02-22</div>
+            <div class="table-smog__tr__td">1223456667</div>
+            <div class="table-smog__tr__td">Παπαδόπουλος Κωνσταντίνος</div>
+            <div class="table-smog__tr__td">1223456667</div>
+            <div class="table-smog__tr__td">Δ</div>
+            <div class="table-smog__tr__td">Δ</div>
+            <div class="table-smog__tr__td">21-02-22 10:30:20</div>
+        </div>
+        <div class="table-smog__tr">
+            <div class="table-smog__tr__td">6382</div>
+            <div class="table-smog__tr__td">Α-3729/21-02-22</div>
+            <div class="table-smog__tr__td">1223456667</div>
+            <div class="table-smog__tr__td">Παπαδόπουλος Κωνσταντίνος</div>
+            <div class="table-smog__tr__td">1223456667</div>
+            <div class="table-smog__tr__td">Δ</div>
+            <div class="table-smog__tr__td">Δ</div>
+            <div class="table-smog__tr__td">21-02-22 10:30:20</div>
+        </div>
+        <div class="table-smog__tr">
+            <div class="table-smog__tr__td">6382</div>
+            <div class="table-smog__tr__td">Α-3729/21-02-22</div>
+            <div class="table-smog__tr__td">1223456667</div>
+            <div class="table-smog__tr__td">Παπαδόπουλος Κωνσταντίνος</div>
+            <div class="table-smog__tr__td">1223456667</div>
+            <div class="table-smog__tr__td">Δ</div>
+            <div class="table-smog__tr__td">Δ</div>
+            <div class="table-smog__tr__td">21-02-22 10:30:20</div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="dist/js/main.js"></script>
+</body>
+</html>

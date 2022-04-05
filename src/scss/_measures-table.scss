@@ -1,0 +1,111 @@
+.measures-table{
+  background-color: $deddie-light-blue-1;
+  padding: 2rem 1rem;
+  overflow-x: auto;
+  a{
+    text-decoration: none;
+  }
+
+
+  .accordion-button {
+    padding: unset;
+    font-size: inherit;
+    color: currentColor;
+    background-color: unset;
+    overflow-anchor: none;
+    border: none;
+    box-shadow: none;
+    span{
+      order: 1;
+    }
+    &:after{
+      margin-left: .5rem;
+      margin-right: .5rem;
+      width: 1rem;
+      height: 1rem;
+      background-size: 1rem;
+    }
+  }
+  .accordion-item{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: unset;
+    box-shadow: none;
+    background-color: unset;
+  }
+
+  .accordion-body{
+    padding: 0;
+    flex: 0 0 100%;
+  }
+
+  .accordion-collapse{
+    flex: 0 0 100%;
+    .measures-table__tr__td:first-child{
+    padding-left: 20px
+    }
+    .accordion-collapse{
+      .measures-table__tr__td:first-child{
+        padding-left: 40px
+      }
+    }
+  }
+
+  &__th{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14.4px;
+    &__td{
+      flex: 1 0 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      &:first-child{
+        flex: 0 0 186px;
+        justify-content: flex-start;
+      }
+      &:nth-child(even){
+        background-color: rgba($deddie-light-blue-2, .1);
+      }
+    }
+  }
+  &__tr{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 12px;
+    line-height: 14.4px;
+    border-bottom: solid .5px $deddie-light-grey-1;
+    &__title{
+      flex: 0 0 100%;
+    }
+    &__td{
+      flex: 1 0 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 32px;
+      &:first-child{
+        flex: 0 0 186px;
+        justify-content: flex-start;
+      }
+      &:nth-child(even){
+        background-color: rgba($deddie-light-blue-2, .1);
+      }
+    }
+    &--inner-title{
+      border-bottom: none;
+      .measures-table__tr__td:first-child{
+        font-size: 10px;
+        color: $deddie-grey-1;
+        font-weight: bold;
+        padding-left: 20px;
+      }
+    }
+  }
+}
